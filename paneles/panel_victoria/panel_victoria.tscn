@@ -1,0 +1,93 @@
+[gd_scene load_steps=8 format=3 uid="uid://dalitknb4xa6i"]
+
+[ext_resource type="FontFile" uid="uid://bidivll5qqrk" path="res://paneles/MaldiniBold.ttf" id="1_gvbuy"]
+[ext_resource type="Script" path="res://paneles/panel_victoria/panel_victoria.gd" id="2_1bgh3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6wats"]
+bg_color = Color(0.180392, 0.180392, 0.180392, 1)
+shadow_size = 5
+shadow_offset = Vector2(10, 10)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s108q"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5216w"]
+bg_color = Color(0, 0.737255, 0.176471, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ipma3"]
+bg_color = Color(0, 0.572549, 0.631373, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gpca8"]
+bg_color = Color(0, 0.611765, 0.172549, 1)
+
+[node name="PanelVictoria" type="CanvasLayer"]
+script = ExtResource("2_1bgh3")
+
+[node name="GameOverPanel" type="Panel" parent="."]
+offset_top = 112.0
+offset_right = 634.0
+offset_bottom = 538.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_6wats")
+
+[node name="Victoria" type="Label" parent="GameOverPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -158.0
+offset_top = -214.0
+offset_right = 153.0
+offset_bottom = -106.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_gvbuy")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxFlat_s108q")
+text = "¡VICTORIA!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GameOverPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.14
+offset_left = -1.0
+offset_top = 343.0
+offset_right = 560.0
+offset_bottom = 391.0
+grow_vertical = 0
+alignment = 1
+
+[node name="BotonJugarDeNuevo" type="Button" parent="GameOverPanel/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_gvbuy")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_5216w")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ipma3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_gpca8")
+text = "Jugar de Nuevo"
+
+[node name="BotonSalirMenu" type="Button" parent="GameOverPanel/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_gvbuy")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_5216w")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ipma3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_gpca8")
+text = "Salir al Menú"
+script = ExtResource("2_1bgh3")
+
+[node name="Segundos" type="Label" parent="."]
+offset_left = 58.0
+offset_top = 310.0
+offset_right = 582.0
+offset_bottom = 357.0
+theme_override_fonts/font = ExtResource("1_gvbuy")
+theme_override_font_sizes/font_size = 35
+text = "Has completado el nivel en: "
+
+[connection signal="pressed" from="GameOverPanel/HBoxContainer/BotonJugarDeNuevo" to="GameOverPanel/HBoxContainer/BotonSalirMenu" method="_on_boton_jugar_de_nuevo_pressed"]
+[connection signal="pressed" from="GameOverPanel/HBoxContainer/BotonSalirMenu" to="GameOverPanel/HBoxContainer/BotonSalirMenu" method="_on_pressed"]
+[connection signal="pressed" from="GameOverPanel/HBoxContainer/BotonSalirMenu" to="GameOverPanel/HBoxContainer/BotonSalirMenu" method="_on_pressed_menu"]
