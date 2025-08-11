@@ -1,0 +1,10 @@
+res://mapa/nivel1/nivel1.tscn::9a0bf4e891efbfc12bf5629a14d6cc7b::1741625561::res://.godot/exported/133200997/export-6ddcb2dd2ddd20f297885b9e47ac3bc9-nivel1.scn
+res://mapa/nivel2/nivel2.tscn::c96e2d0e3990848a12152ad26ccd6971::1741625562::res://.godot/exported/133200997/export-9f5d19862acbb9dc0affa215566601fd-nivel2.scn
+res://paneles/panel_esc/panel_esc.tscn::5310ea12b9946469b7495384a6d370bc::1741620549::res://.godot/exported/133200997/export-0ced387b7b33bc46e8333393d0d6e3c3-panel_esc.scn
+res://paneles/panel_gameover/game_over_menu.tscn::223ba9e71885b4a8129a776c47264b0d::1741625563::res://.godot/exported/133200997/export-d1ba8f5dc634b60b920181ece0967466-game_over_menu.scn
+res://paneles/panel_gameover_nivel2/derrotaN2.tscn::c2352fa5044172feab8757505a542790::1741625563::res://.godot/exported/133200997/export-8d7f38601b860016a2866e54ef75321e-derrotaN2.scn
+res://paneles/panel_menuprincipal/menu_principal.tscn::4be6d7ed64b209dea2a5d51a458af8b1::1741625562::res://.godot/exported/133200997/export-e06e1e279c5a3b458d2ce21ce6a830bc-menu_principal.scn
+res://paneles/panel_victoria/panel_victoria.tscn::6cf5b47eac006b5c03bcbdbc9ce651c3::1741620549::res://.godot/exported/133200997/export-908e9442b158aec7f6d7a3f07577868f-panel_victoria.scn
+res://personaje/pepe.tscn::a464e322384a394c953917da997962f9::1741620549::res://.godot/exported/133200997/export-095cba1ffa6e697ebb6ea3e608c5b891-pepe.scn
+res://personaje/pepeNuevo.tscn::5e936091efa2a67e01e9c4b2db53f280::1741625559::res://.godot/exported/133200997/export-d7246598809e6820209a782246f9fae9-pepeNuevo.scn
+res://static_body_2d.tscn::102a2489f5c377b7e4bb3caf35f00ec3::1739816336::res://.godot/exported/133200997/export-02286b65e76640ef6cf1f2afac61c608-static_body_2d.scn

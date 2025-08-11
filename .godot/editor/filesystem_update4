@@ -1,0 +1,6 @@
+res://paneles/panel_gameover/game_over_menu.tscn
+res://personaje/pepeNuevo.tscn
+res://mapa/nivel1/nivel1.tscn
+res://mapa/nivel2/nivel2.tscn
+res://paneles/panel_menuprincipal/menu_principal.tscn
+res://paneles/panel_gameover_nivel2/derrotaN2.tscn

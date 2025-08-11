@@ -1,0 +1,11 @@
+Camera2D
+Label
+Timer
+Button
+CanvasLayer
+Node
+TileMapLayer
+CollisionShape2D
+Area2D
+CharacterBody2D
+AnimationPlayer
